@@ -5,7 +5,7 @@ import { FaSearch } from 'react-icons/fa';
 
 const API_KEY = '32ed0bb43667fb02f2de66cc160d8947';
 
-function HomePage() {
+function MovieSearch() {
   const [searchTerm, setSearchTerm] = useState('');
   const [topRatedMovies, setTopRatedMovies] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
@@ -99,4 +99,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default MovieSearch;

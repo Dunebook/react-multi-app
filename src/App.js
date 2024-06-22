@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import WeatherApp from './components/WeatherApp';
 import JokesApp from './components/JokesApp';
 import JamendoMusic from './components/JamendoMusic';
-import HomePage from './components/tmdb/HomePage';
+import MovieSearch from './components/tmdb/MovieSearch';
 import MovieDetail from './components/tmdb/MovieDetail';
+import StockMarket from './components/StockMarket';
+import CurrencyConverter from './components/CurrencyConverter';
 import { FaSearch } from 'react-icons/fa';
 
 function App() {
@@ -21,8 +23,10 @@ function MainApp() {
   const apps = [
     { name: 'Weather App', description: 'Check the weather in any city.', link: '/weather', color: 'bg-gradient-to-r from-blue-400 to-blue-600 hover:from-blue-500 hover:to-blue-700' },
     { name: 'Jokes App', description: 'Get random jokes for a laugh.', link: '/jokes', color: 'bg-gradient-to-r from-green-400 to-green-600 hover:from-green-500 hover:to-green-700' },
-    { name: 'Music player', description: 'Search and listen to music.', link: '/jamendo', color: 'bg-gradient-to-r from-red-400 to-red-600 hover:from-red-500 hover:to-red-700' },
-    { name: 'Search Movies', description: 'Search for any movie.', link: '/homepage', color: 'bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700' },
+    { name: 'Music Player', description: 'Search and listen to music.', link: '/jamendo', color: 'bg-gradient-to-r from-red-400 to-red-600 hover:from-red-500 hover:to-red-700' },
+    { name: 'Search Movies', description: 'Search for any movie.', link: '/movie-search', color: 'bg-gradient-to-r from-purple-400 to-purple-600 hover:from-purple-500 hover:to-purple-700' },
+    { name: 'Stock Market', description: 'Stock market data.', link: '/stock-market', color: 'bg-gradient-to-r from-red-400 to-red-600 hover:from-green-500 hover:to-purple-700' },
+    { name: 'Currency Converter', description: 'Convert currencies.', link: '/currency-converter', color: 'bg-gradient-to-r from-yellow-400 to-yellow-600 hover:from-yellow-500 hover:to-yellow-700' },
   ];
 
   const filteredApps = apps.filter(app =>
@@ -58,9 +62,10 @@ function MainApp() {
           <Route path="/weather" element={<WeatherApp />} />
           <Route path="/jokes" element={<JokesApp />} />
           <Route path="/jamendo" element={<JamendoMusic />} />
-           <Route path="/homepage" element={<HomePage />} />
+          <Route path="/movie-search" element={<MovieSearch />} />
           <Route path="/movie/:id" element={<MovieDetail />} />
- 
+          <Route path="/stock-market" element={<StockMarket />} />
+          <Route path="/currency-converter" element={<CurrencyConverter />} />
         </Routes>
       </div>
     </div>
