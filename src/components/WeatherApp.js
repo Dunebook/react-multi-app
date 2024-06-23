@@ -9,7 +9,7 @@ function WeatherApp() {
   useEffect(() => {
     const fetchWeather = async () => {
       try {
-        const apiKey = '85b2a66d4c194d20ab9132320242206';
+        const apiKey = 'add your key here';
         const url = `http://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
         const response = await axios.get(url);
         setWeather(response.data.current);

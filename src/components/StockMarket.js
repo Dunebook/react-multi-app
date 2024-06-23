@@ -4,7 +4,7 @@ import {
   LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
 
-const API_KEY = '1GVJ4V13KRCPYZFU';
+const API_KEY = 'add key here';
 
 function StockMarket() {
   const [symbol, setSymbol] = useState('AAPL');

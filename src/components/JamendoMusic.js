@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 
-const API_KEY = '2bb85d62';
+const API_KEY = 'add key here';
 
 function JamendoMusic() {
   const [searchTerm, setSearchTerm] = useState('');

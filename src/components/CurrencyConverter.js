@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const API_KEY = 'fca_live_Fl4fl0IfTYCSxVPZJkSr3g7zSV29QrvbIRJ2cnfC';
+const API_KEY = 'add key here';
 
 const currencySymbols = {
   USD: '$',

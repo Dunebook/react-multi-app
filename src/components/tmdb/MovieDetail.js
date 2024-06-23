@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 
-const API_KEY = '32ed0bb43667fb02f2de66cc160d8947';
+const API_KEY = 'add key here';
 
 function MovieDetail() {
   const { id } = useParams();
